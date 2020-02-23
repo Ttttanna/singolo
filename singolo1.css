@@ -19,6 +19,7 @@
 
 .container {  
   width: 1020px;
+  margin: auto;
 }
 
 .header-wrapper {
