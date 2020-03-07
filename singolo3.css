@@ -24,11 +24,140 @@
    border-bottom: 6px solid #ea676b;
  }
  .quote-wrapper {
-   width: 640px;
+   width: 940px;
    margin-left: 40px;
    margin-right: 40px;
  }
 
- .form-container {
-   display: flex;
+ .quote__p {
+  text-align: justify;
+  
  }
+
+ .quote-information-container {
+   width: 940px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ 
+ .input-text, .input-email, .textarea {
+   width: 620px;
+   height: 38px;
+   border: 1px solid #d6564f;
+   border-radius: 5px;
+   background-color: #d6564f;
+   margin-bottom: 15px;
+   box-sizing: border-box;
+   
+ }
+ .textarea {
+   height: 202px;
+   resize: none;
+ }
+ .input-submit {
+  height: 38px;
+  width: 90px;
+  border: 1px solid #d6564f;
+  border-radius: 5px;
+  background-color: #d6564f;  
+  box-sizing: border-box;
+  color: white;  
+ }
+
+ .input-text::placeholder, .input-email::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  padding-left: 15px;  
+}
+.textarea::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.quote-information__p {
+  width: 300px;
+  text-align: justify;
+}
+
+img {
+  padding-right: 12px;
+}
+.quote-icons-link, span {
+  color: #f0d8d9;
+  text-decoration: none;
+}
+
+.test {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #f0d8d9;
+}
+
+.quot-icons-location, .quot-icons-mail, .quot-icons-phone {
+  margin-bottom: 5px;
+}
+
+footer {
+  height: 76px;
+  background-color: #2d303a;
+  
+}
+
+.footer__copy {
+  color: #53596f;
+  margin: 0;
+}
+
+.twitter {
+  background-image: url("assets/images/twitter.svg");
+}
+.google {
+  background-image: url("assets/images/Google.svg");
+}
+.facebook {
+  background-image: url("assets/images/Facebook.svg");
+}
+.linkedin {
+  background-image: url("assets/images/LinkedIn.svg");
+}
+
+.link__footer {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin-right: 6px;  
+}
+
+
+.link__footer:hover {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin-right: 6px;
+  cursor: pointer;
+  transform: scale(1.2);  
+}
+
+.last {
+  margin-right: 0;
+}
+
+
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-wrapper {
+  width: 940px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
