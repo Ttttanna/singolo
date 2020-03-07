@@ -15,23 +15,39 @@
 
  .container {
   width: 1020px; 
-}
-
+} 
 
  .quote {
-   height: 655px;
+   height: 649px;
    background-color: #f06c64;
    border-bottom: 6px solid #ea676b;
  }
+
  .quote-wrapper {
    width: 940px;
    margin-left: 40px;
    margin-right: 40px;
  }
 
+ .quote__h2 {
+   margin: 0;
+   padding-top: 69px;
+   font-family: "Lato-Black";
+   font-size: 30px;
+   line-height: 18px;
+   color: #f0d8d9;
+   letter-spacing: -0.2px;
+ }
+
  .quote__p {
-  text-align: justify;
-  
+   margin: 0;
+   margin-top: 27px;
+   margin-bottom: 44px;
+   font-family: "Lato-Light";
+   text-align: justify;
+   font-size: 18px;
+   line-height: 30px;
+   color: #f0d8d9;  
  }
 
  .quote-information-container {
@@ -40,21 +56,21 @@
    justify-content: space-between;
  }
 
- 
  .input-text, .input-email, .textarea {
    width: 620px;
    height: 38px;
    border: 1px solid #d6564f;
    border-radius: 5px;
    background-color: #d6564f;
-   margin-bottom: 15px;
-   box-sizing: border-box;
-   
+   margin-bottom: 16px;
+   box-sizing: border-box;   
  }
+
  .textarea {
    height: 202px;
    resize: none;
  }
+
  .input-submit {
   height: 38px;
   width: 90px;
@@ -62,67 +78,104 @@
   border-radius: 5px;
   background-color: #d6564f;  
   box-sizing: border-box;
-  color: white;  
+  color:#f0d8d9;
+  font-family: "Lato-Regular";  
  }
 
  .input-text::placeholder, .input-email::placeholder {
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
-  padding-left: 15px;  
+  padding-left: 15px;
+  font-family: "Lato-Regular";    
 }
+
 .textarea::placeholder {
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding-left: 10px;
+  padding-top: 5px;
+  letter-spacing: 0.7px;
+}
+
+.quote-information__h3 {
+  margin:0px;
+  font-family: "Lato-Black";
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  letter-spacing: -0.1px;
 }
 
 .quote-information__p {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  letter-spacing: -0.2px;
+  font-family: "Lato-Regular";
   width: 300px;
   text-align: justify;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+}
+
+.quote-icons-location {
+  padding-left: 2.5px;
 }
 
 img {
-  padding-right: 12px;
+  padding-right: 10px;
 }
-.quote-icons-link, span {
+
+.quote-icons-link {
+  font-family: "Lato-Regular";
+  font-size: 12px;
+  line-height: 22px;
   color: #f0d8d9;
   text-decoration: none;
 }
 
-.test {
+.icons__p {
   display: inline-block;
   margin: 0;
   padding: 0;
   color: #f0d8d9;
+  font-family: "Lato-Regular";
+  font-size: 12px;
+  line-height: 22px;
 }
 
-.quot-icons-location, .quot-icons-mail, .quot-icons-phone {
-  margin-bottom: 5px;
+.second-link {
+  letter-spacing: -0.2px;
 }
 
 footer {
   height: 76px;
-  background-color: #2d303a;
-  
+  background-color: #2d303a;  
 }
 
 .footer__copy {
   color: #53596f;
   margin: 0;
+  font-family: "Lato-Regular";
+  font-size: 12px;
+  line-height: 22px;
+  padding-top: 26px;
 }
 
 .twitter {
   background-image: url("assets/images/twitter.svg");
 }
+
 .google {
   background-image: url("assets/images/Google.svg");
 }
+
 .facebook {
   background-image: url("assets/images/Facebook.svg");
 }
+
 .linkedin {
   background-image: url("assets/images/LinkedIn.svg");
 }
@@ -131,9 +184,9 @@ footer {
   width: 34px;
   height: 34px;
   display: block;
-  margin-right: 6px;  
+  margin-right: 6px;
+  margin-left: -0.6px; 
 }
-
 
 .link__footer:hover {
   width: 34px;
@@ -148,10 +201,9 @@ footer {
   margin-right: 0;
 }
 
-
-
 .footer-icons {
   display: flex;
+  padding-top: 20px;
 }
 
 .footer-wrapper {
