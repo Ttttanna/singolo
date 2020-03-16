@@ -10,33 +10,46 @@
   <body>
    <div class="container"> 
     <header class="header">
-     <div class="header-wrapper"> 
-      <h1 class ="logo">Singolo <span>*</span></h1>
+     <div class="header-wrapper" > 
+      <h1 class ="logo">Singolo <span>*</span> <a name="home"></a></h1>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li><a href="#"> Home </a></li>
-          <li><a href="#"> Services </a></li>
-          <li><a href="#"> Portfolio </a></li>
-          <li><a href="#"> About </a></li>
-          <li><a href="#"> Contact </a></li>
+          <li ><a name="home" class="header-link chosen" href="#home"> Home </a></li>
+          <li><a  class="header-link" href="#serv"> Services </a></li>
+          <li><a  class="header-link" href="#portfolio"> Portfolio </a></li>
+          <li><a  class="header-link" href="#about"> About </a></li>
+          <li><a  class="header-link" href="#contact"> Contact </a></li>
         </ul>
       </nav>
     </div>
     </header>
     <div class="slider">
-     <div class="slider-wrapper">
-      <span class="arrow-left"><a href="#"><img src="assets/images/chev.png" alt="arrow"></a></span>
-      <div class="slider__vertical"><img src="assets/images/iPhoneV.png" alt="phone"></div>
-      <div class="slider__horizontal"><img class="screen" src="assets/images/iPhoneb.png" alt="phone"></div>
-      <span class="arrow-right"><a href="#"><img src="assets/images/chev (1).png" alt="arrow"></a></span>
-      <div class="shadow-horizontal"><img src="assets/images/Shadow.png" alt="shadow"></div>
-      <div class="shadow-vertical"><img src="assets/images/Shadow2.png" alt="shadow"></div>
-    </div>
-    </div>     
+      <div class="slider-wrapper">
+       <span class="arrow-left"><a href="#"><img src="assets/images/chev.png" alt="arrow"></a></span>
+       <div class="carousel">
+         <div class="item active">
+           <div class="slider__vertical"><img src="assets/images/iPhoneV.png" alt="phone"></div>
+           <div class="slider__horizontal"><img src="assets/images/iPhoneb.png" alt="phone"></div>
+           <div class="shadow-horizontal"><img src="assets/images/Shadow.png" alt="shadow"></div>
+           <div class="shadow-vertical"><img src="assets/images/Shadow2.png" alt="shadow"></div>
+           <div class="vhome-button"><img src="assets/images/home.png"></div>
+           <div class="hhome-button"><img src="assets/images/home.png"></div>
+           <div class="off"></div>
+           <div class="black"></div>
+         </div>
+         <div class="item">
+           <div class="slide2"><img src="assets/images/Slider.png"></div>
+         </div>
+       </div>
+       
+       <span class="arrow-right"><a href="#"><img src="assets/images/chev (1).png" alt="arrow"></a></span>
+       
+     </div>
+     </div>      
 
     <div class="services">
       <div class="services-wrapper">
-        <h2 class="services__h2">Our Services</h2>
+        <h2 class="services__h2"> <a name="serv"></a>Our Services</h2>
         <p class="services__p">Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum. Duis mollis, non commodo luctus nisi erat
           portittor ligula, eget lacinia odio sem nec elit. Fusce dapibus tellus ac cursus comodo, tortor mauris condimentum nibh
         </p>
@@ -88,11 +101,11 @@
     </div>
     <section class="portfolio">      
       <div class="portfolio-wrapper">
-        <h2 class="portfolio__h2"> Portfolio</h2>
+        <h2 class="portfolio__h2"> <a name="portfolio"></a> Portfolio</h2>
         <p class="portfolio__p">Duis mollis, non commodo luctus nisi erat
           portittor ligula, eget lacinia odio sem nec elit.</p>
           <div class="portfolio-navigation">
-            <button class="portfolio-button first-button">All</button>
+            <button class="portfolio-button active-button">All</button>
             <button class="portfolio-button second-button">Web Design</button>
             <button class="portfolio-button third-button">Graphic Design</button>
             <button class="portfolio-button">Artwork</button>
@@ -110,14 +123,13 @@
             <div class="portfolio-image"><img src="assets/images/image10.png"></div>
             <div class="portfolio-image"><img src="assets/images/image11.png"></div>
             <div class="portfolio-image"><img src="assets/images/image12.png"></div>
-            <div class="portfolio-image"><img src="assets/images/image11.png"></div>
-            <div class="portfolio-image"><img src="assets/images/image12.png"></div>
+          
           </div>
       </div>
     </section>
     <section class="about">
       <div class="about-wrapper">
-        <h2 class="about__h2">About Us</h2>
+        <h2 class="about__h2"> <a name="about"></a>About Us</h2>
         <p class="about__p">
           Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum.
            Duis mollis, non commodo luctus nisi erat portittor ligula, eget 
@@ -170,17 +182,26 @@
         </p>
         <div class="quote-information-container">
           <div class="form">
-            <form>
-              <input class ="input-text" type="text" required placeholder="Name(Required)">
+            <form method="POST" action="form.php">
+              <input class ="input-text user-name" type="text" required placeholder="Name(Required)">
               <input class="input-email" type="email" required placeholder="Email(Required)">
-              <input class="input-text" type="text" placeholder="Subject">
+              <input class="input-text subject" type="text" placeholder="Subject">
               <textarea class="textarea" placeholder="Describe your project in detail"></textarea>
               
               <input class="input-submit" type="submit" value="Submit">
              </form>              
           </div>
+          <div class="message-block hidden">
+            <div class="message">
+              <h3>Письмо отправлено</h3>
+              <div class="message-theme"></div>
+              <div class="message-description"></div>
+              <button class="message-button">OK</button>
+            </div>
+          </div>
+
           <div class="quote-information">
-            <h3 class="quote-information__h3">Contact Information</h3>
+            <h3 class="quote-information__h3"> <a name="contact"></a>Contact Information</h3>
             <p class="quote-information__p">
               Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib. Fusce vitae aliquam tellus. Proin sit amet volutpat
               libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, etconsequat felis.
@@ -212,5 +233,6 @@
       </div>
     </footer>
    </div>
+   <script src="script.js"></script>
   </body>
 </html>

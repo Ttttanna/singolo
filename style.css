@@ -37,6 +37,7 @@
   color: white;
   font-family: "Lato-Bold";
   line-height: 6px;
+ 
 }
 
 .logo {
@@ -76,23 +77,28 @@
   margin-left: -16px;
 }
 
-.navigation li:first-child a {
-  color:#f06c64; 
-}
 
-.navigation li a {
+
+
+
+.header-link {
   text-decoration: none;
   color: #fff;
 }
 
-.navigation li a:hover {
+.header-link:hover {
   text-decoration: none;
   color:#f06c64;
 }
 
+.chosen {
+  color:#f06c64;
+}
+
+
 /*Вторая секция*/
 .slider {
-  height: 595px; 
+  height: 590px; 
   background-color: #f06c64;
   border-bottom: 5px solid #ea676b;
 }
@@ -132,6 +138,7 @@
 .arrow-left {
   position: absolute;
   margin-top: 280px;
+  z-index: 1;
 }
 
 .arrow-left:hover {
@@ -139,12 +146,14 @@
   margin-top: 280px;
   background-color: bisque;
   cursor: pointer;
+  z-index: 1;
 }
 
 .arrow-right {
   position: absolute;
   margin-top: 280px;
-  margin-left: 923px;  
+  margin-left: 923px;
+  z-index: 1;  
 }
 
 .arrow-right:hover {
@@ -153,8 +162,72 @@
   margin-left: 923px;
   background-color: bisque;
   cursor: pointer;
-  transform: scale(1.2);
+  z-index: 1;
 }
+
+.item {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+.slide2 {
+  position: absolute;
+  margin-left: -40px;
+}
+
+.dark-screen-vertical {
+  position: absolute;  
+  background-image: url("assets/images/ver-dark-screen.png");
+  height:339px;
+  width: 194px;
+}
+
+.dark-screen-horizontal {
+  position: absolute;
+  background-image: url("assets/images/hor-dark-screen.png");
+  width: 339px;
+  height: 194px;  
+}
+
+.off {
+  position: absolute;
+  z-index: 1;
+  margin-top: 113px;
+  margin-left: 83px;
+}
+
+.black {
+  position: absolute;
+  z-index: 1;
+  margin-left: 441px;
+  margin-top: 183px;
+}
+
+.vhome-button {
+  position: absolute;
+  z-index: 1;
+  margin-top: 458px;
+  margin-left: 158px;
+  cursor:pointer;
+}
+
+.hhome-button {
+  position: absolute;
+  z-index: 1;
+  margin-top: 257px;
+  margin-left: 390px;
+  cursor: pointer;  
+}
+/*.slider {
+ 
+
+
+
+ 
+
+*/
 
 .services {
   background-color: #f2f2f2;
@@ -274,12 +347,13 @@ h4 {
   border-radius: 5px;
   background-color: #2d303a;
   border: 1px solid #666d89;
-  margin-right: 8px;  
+  margin-right: 8px;
+  cursor: pointer;    
 }
 
 
 
-.first-button, .portfolio-button:hover {
+.active-button, .portfolio-button:hover {
   font-size: 12px;
   line-height: 22px;
   color: white;
@@ -287,7 +361,9 @@ h4 {
   border-radius: 5px;
   background-color: #2d303a;
   border: 1px solid white;
-  margin-right: 8px;  
+  margin-right: 8px;
+  outline: 0;
+  outline-offset: 0 
 }
 
 .second-button {
@@ -316,6 +392,12 @@ h4 {
   display: block;
 }
 
+.portfolio-border {
+  border: 5px solid #f06c64;
+
+}
+
+/*About section*/
 .about {
   height: 727px;
   background-color: #f2f2f2;
@@ -468,7 +550,14 @@ h4 {
   border-radius: 5px;
   background-color: #d6564f;
   margin-bottom: 16px;
-  box-sizing: border-box;   
+  box-sizing: border-box;
+  color: white;
+  padding: 5px;   
+}
+
+.input-text:focus, .input-email:focus, .textarea:focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
 .textarea {
@@ -524,8 +613,6 @@ h4 {
   letter-spacing: 0.7px;
   opacity: 1;
  }
-
-
 
 .quote-information__h3 {
  margin:0px;
@@ -641,4 +728,50 @@ footer {
  margin-right: 40px;
  display: flex;
  justify-content: space-between;
+}
+
+/*Modal window*/
+.message-block {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  margin-left: -30px;
+  background: rgba(255,245,238, 0.5);
+  border-radius: 8px;
+}
+
+.message {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  border: 2px solid seashell;
+  border-radius: 15px;
+  text-align: center;
+  background-color: skyblue;
+  
+}
+
+.message h3 {
+  margin: 20px;
+  font-family: "Lato-Regular";
+  font-size: 18px
+}
+
+.message div {
+  margin: 15px;
+  font-family: "Lato-Regular";
+  text-align: justify;
+  font-size: 16px;
+}
+
+.message-button {
+  background-color: floralwhite;
+  width: 90px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.hidden {
+  display: none;
 }
