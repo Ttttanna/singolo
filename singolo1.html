@@ -4,102 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="singolo1.css">
+    <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
   </head>
   <body>
-   <div class="container"> 
+   <div class="container">
+    <div class="header-container to-scroll" id="home"> 
     <header class="header">
-     <div class="header-wrapper"> 
+     <div class="header-wrapper" > 
       <h1 class ="logo">Singolo <span>*</span></h1>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li><a href="#"> Home </a></li>
-          <li><a href="#"> Services </a></li>
-          <li><a href="#"> Portfolio </a></li>
-          <li><a href="#"> About </a></li>
-          <li><a href="#"> Contact </a></li>
+          <li ><a class="header-link chosen" href="#home">Home</a></li>
+          <li><a  class="header-link" href="#serv">Services</a></li>
+          <li><a  class="header-link" href="#portfolio">Portfolio</a></li>
+          <li><a  class="header-link" href="#about"> About </a></li>
+          <li><a  class="header-link" href="#contact">Contact </a></li>
         </ul>
       </nav>
     </div>
     </header>
-    <div class="slider">
-     <div class="slider-wrapper">
-      <span class="arrow-left"><a href="#"><img src="assets/images/chev.png" alt="arrow"></a></span>
-      <div class="slider__vertical"><img src="assets/images/iPhoneV.png" alt="phone"></div>
-      <div class="slider__horizontal"><img class="screen" src="assets/images/iPhoneb.png" alt="phone"></div>
-      <span class="arrow-right"><a href="#"><img src="assets/images/chev (1).png" alt="arrow"></a></span>
-      <div class="shadow-horizontal"><img src="assets/images/Shadow.png" alt="shadow"></div>
-      <div class="shadow-vertical"><img src="assets/images/Shadow2.png" alt="shadow"></div>
-    </div>
-    </div>       
+   </div>
 
-    <div class="services">
+
+    <div class="slider">
+      <div class="slider-wrapper">
+       <span class="arrow-left"><a href="#"><img src="assets/images/chev.png" alt="arrow"></a></span>
+       <div class="carousel">
+         <div class="item active">
+           <div class="slider__vertical"><img src="assets/images/iPhoneV.png" alt="phone"></div>
+           <div class="slider__horizontal"><img src="assets/images/iPhoneb.png" alt="phone"></div>
+           <div class="shadow-horizontal"><img src="assets/images/Shadow.png" alt="shadow"></div>
+           <div class="shadow-vertical"><img src="assets/images/Shadow2.png" alt="shadow"></div>
+           <div class="vhome-button"><img src="assets/images/home.png"></div>
+           <div class="hhome-button"><img src="assets/images/home.png"></div>
+           <div class="off"></div>
+           <div class="black"></div>
+         </div>
+         <div class="item">
+           <div class="slide2"><img src="assets/images/Slider.png"></div>
+         </div>
+       </div>
+       
+       <span class="arrow-right"><a href="#"><img src="assets/images/chev (1).png" alt="arrow"></a></span>
+       
+     </div>
+     </div>      
+
+    <div class="services to-scroll" id = "serv">
+      
       <div class="services-wrapper">
-        <h2 class="services__h2">Our Services</h2>
+        <h2 class="services__h2"> Our Services</h2>
         <p class="services__p">Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum. Duis mollis, non commodo luctus nisi erat
           portittor ligula, eget lacinia odio sem nec elit. Fusce dapibus tellus ac cursus comodo, tortor mauris condimentum nibh
         </p>
-      </div>      
-      <div class="column-layout">
-        <div class="benefits">
-          <div class="benefits_icon">
-            <span class="icon-round"><img src="assets/images/Pen.svg"></span>
+        <div class="benefits-container">
+          <div class="benefits-element">
+            <div class="benefits-icon"><img src="assets/images/Pen.svg"> </div>
+            <div class="benefits__text">
+              <h4>Custom Design</h4>
+              <p class="benefits__p">Curabiture vestibulum eget mauris quis laoret. Phasellus in quam laoreet, viverra lacus ut, ultrices velit</p>
+            </div>
           </div>
-          <div class="benefits__text">
-            <h4>Custom Design</h4>
-            <p class="benefits__p">Curabiture vestibulum eget mauris quis laoret. Phasellus in quam laoreet, viverra lacus ut, ultrices velit</p>
-          </div>          
-        </div>        
-        <div class="benefits">
-          <div class="benefits_icon">
-            <span class="icon-round"><img src="assets/images/Bulb.svg"></span>
+          <div class="benefits-element">
+            <div class="benefits-icon"><img class="star" src="assets/images/Bulb.svg"> </div>
+            <div class="benefits__text">
+              <h4>Inovative Ideas</h4>
+              <p class="benefits__p">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem</p>
+            </div>
           </div>
-          <div class="benefits__text">
-            <h4>Inovative Ideas</h4>
-            <p class="benefits__p">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem</p>
+          <div class="benefits-element">
+            <div class="benefits-icon"><img class="star" src="assets/images/Heart.svg"> </div>
+            <div class="benefits__text">
+              <h4>Love Is The Answer</h4>
+              <p class="benefits__p">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum</p>
+            </div>
+          </div>
+          <div class="benefits-element">
+            <div class="benefits-icon"><img src="assets/images/Phone.svg"> </div>
+            <div class="benefits__text">
+              <h4>Responsive Layout</h4>
+              <p class="benefits__p">Sed portittor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praecent elit leo</p>
+            </div>
+          </div>
+          <div class="benefits-element">
+            <div class="benefits-icon"><img class="star" src="assets/images/Bubble.svg"> </div>
+            <div class="benefits__text">
+              <h4>24 / 7 Support</h4>
+              <p class="benefits__p">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem</p>
+            </div>
+          </div>
+          <div class="benefits-element">
+            <div class="benefits-icon"><img class="star" src="assets/images/Star.svg"> </div>
+            <div class="benefits__text">
+              <h4>Feel Like A Star</h4>
+              <p class="benefits__p">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae alliquam tellus</p>
+            </div>
           </div>
         </div>
-        <div class="benefits">
-          <div class="benefits_icon">
-            <span class="icon-round"><img src="assets/images/Heart.svg"></span>
+      </div>     
+    </div>
+    <section class="portfolio to-scroll" id="portfolio">
+        
+      <div class="portfolio-wrapper">
+        <h2 class="portfolio__h2">  Portfolio</h2>
+        <p class="portfolio__p">Duis mollis, non commodo luctus nisi erat
+          portittor ligula, eget lacinia odio sem nec elit.</p>
+          <div class="portfolio-navigation">
+            <button class="portfolio-button active-button">All</button>
+            <button class="portfolio-button second-button">Web Design</button>
+            <button class="portfolio-button third-button">Graphic Design</button>
+            <button class="portfolio-button">Artwork</button>
           </div>
-          <div class="benefits__text">
-            <h4>Love Is The Answer</h4>
-            <p class="benefits__p">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum</p>
-          </div>          
+          <div class="portfolio-images-container">
+            <div class="portfolio-image"><img src="assets/images/image1.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image2.png"> </div>
+            <div class="portfolio-image"><img src="assets/images/image3.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image4.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image5.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image6.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image7.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image8.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image9.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image10.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image11.png"></div>
+            <div class="portfolio-image"><img src="assets/images/image12.png"></div>
+          
+          </div>
+      </div>
+    </section>
+    <section class="about to-scroll" id="about">
+      <div class="about-wrapper">
+        <h2 class="about__h2">About Us</h2>
+        <p class="about__p">
+          Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum.
+           Duis mollis, non commodo luctus nisi erat portittor ligula, eget 
+           lacinia odio sem nec elit. Fusce dapibus tellus ac cursus comodo, tortor mauris condimentum nibh
+        </p>
+
+        <div class="about-container">
+          <div class="profile-container">
+            <img class="profile__photo" src="assets/images/adam.png">
+            <h4 class="profile__h">Adam Jensen</h4>
+            <p class="profile__p">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem </p>
+            <div class="social-icon">
+              <a class="link facebook"></a>
+              <a class="link google"></a>
+              <a class="link twitter "></a>
+              <a class="link linkedin"></a>
+            </div>
+          </div>
+          <div class="profile-container">
+            <img class="profile__photo" src="assets/images/desmond.png">
+            <h4 class="profile__h">Desmond Miles</h4>
+            <p class="profile__p">Curabiture vestibulum eget mauris quis laoret. Phasellus in quam laoreet, viverra lacus ut, ultrices velit </p>
+            <div class="social-icon">
+              <a class="link facebook"></a>
+              <a class="link google"></a>
+              <a class="link twitter "></a>
+              <a class="link linkedin"></a>
+            </div>
+          </div>
+          <div class="profile-container">
+            <img class="profile__photo" src="assets/images/scolara.png">
+            <h4 class="profile__h">Scolara Visari</h4>
+            <p class="profile__p">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum</p>
+            <div class="social-icon">
+              <a class="link facebook"></a>
+              <a class="link google"></a>
+              <a class="link twitter "></a>
+              <a class="link linkedin"></a>
+            </div>
+          </div>
         </div>
       </div>
-      <!--Second row-->
-      <div class="column-layout">
-        <div class="benefits">
-          <div class="benefits_icon">
-            <span class="icon-round"><img src="assets/images/Phone.svg"></span>
+    </section>
+    <section class="quote to-scroll" id="contact">
+      <div class="quote-wrapper">
+        <h2 class="quote__h2">Get a Quote</h2>
+        <p class="quote__p">
+          Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum. Duis mollis, non commodo luctus nisi erat portittor ligula, eget 
+           lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum nibh
+        </p>
+        <div class="quote-information-container">
+          <div class="form">
+            <form method="POST" action="form.php">
+              <input class ="input-text user-name" type="text" required placeholder="Name(Required)">
+              <input class="input-email" type="email" required placeholder="Email(Required)">
+              <input class="input-text subject" type="text" placeholder="Subject">
+              <textarea class="textarea" placeholder="Describe your project in detail"></textarea>
+              
+              <input class="input-submit" type="submit" value="Submit">
+             </form>              
           </div>
-          <div class="benefits__text">
-            <h4>Responsive Layout</h4>
-            <p class="benefits__p">Sed portittor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praecent elit leo</p>
+          <div class="message-block hidden">
+            <div class="message">
+              <h3>Письмо отправлено</h3>
+              <div class="message-theme"></div>
+              <div class="message-description"></div>
+              <button class="message-button">OK</button>
+            </div>
           </div>
-        </div>        
-        <div class="benefits">
-          <div class="benefits_icon">
-            <span class="icon-round"><img src="assets/images/Bubble.svg"></span>
-          </div>
-          <div class="benefits__text">
-            <h4>24 / 7 Support</h4>
-            <p class="benefits__p">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem</p>
+
+          <div class="quote-information">
+            <h3 class="quote-information__h3"> Contact Information</h3>
+            <p class="quote-information__p">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib. Fusce vitae aliquam tellus. Proin sit amet volutpat
+              libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, etconsequat felis.
+            </p>
+            <div class="quote-icons">
+              <div class="quote-icons-location">
+                <img class="icon-image" src="assets/images/location.png"> <p class="icons__p">Elm St. 14/05 Lost City</p>
+              </div>
+              <div class="quote-icons-phone">
+                <img class="icon-image" src="assets/images/phone.png"> <p class="icons__p"><a class="quote-icons-link second-link" href="tel:035283318635"> 03528 331 86 35</a></p>
+              </div>
+              <div class="quot-icons-mail">
+                <img class ="icon-image" src="assets/images/mail.png"><p class="icons__p"><a class ="quote-icons-link" href="mailto:info@singolo.com">info@singolo.com</a></p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="benefits">
-          <div class="benefits_icon">
-            <span class="icon-round"><img src="assets/images/Star.svg"></span>
-          </div>
-          <div class="benefits__text">
-            <h4>Feel Like A Star</h4>
-            <p class="benefits__p">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae alliquam tellus</p>
-          </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <p class="footer__copy">&copy; Copyright 2013</p>
+        <div class="footer-icons">
+         <a class="link__footer facebook"></a>
+         <a class="link__footer google"></a>
+         <a class="link__footer twitter "></a>
+         <a class="link__footer last linkedin"></a>
         </div>
-      </div>   
-    </div>
+      </div>
+    </footer>
+   </div>
+   <script src="script.js"></script>
   </body>
 </html>

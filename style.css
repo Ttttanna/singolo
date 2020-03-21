@@ -17,10 +17,18 @@
   src: url(assets/fonts/Lato-Light.ttf);
  }
 
+ html {
+   scroll-behavior: smooth;
+ }
 .container {  
   width: 1020px;
   margin: auto;
 }
+
+#home, #serv, #portfolio, #about, #contact {
+  scroll-margin-top: 92px;
+}
+
 
 .header-wrapper {
   display: flex;
@@ -28,6 +36,9 @@
   width: 940px;
   margin-right: 40px;
   margin-left: 40px;
+}
+.header-container {
+  height: 90px;
 }
 
 .header {
@@ -37,6 +48,9 @@
   color: white;
   font-family: "Lato-Bold";
   line-height: 6px;
+  position: fixed;
+  transition: all 0.3s ease;
+  z-index: 999;
  
 }
 
@@ -101,12 +115,27 @@
   height: 590px; 
   background-color: #f06c64;
   border-bottom: 5px solid #ea676b;
+  overflow: hidden;
+  position: relative;
+
+
 }
 
 .slider-wrapper {
   width: 940px;
-  margin-right: 40px;
   margin-left: 40px;
+  margin-right: 40px;
+  position: absolute;
+
+
+}
+
+.carousel {
+  position: relative;
+  width: 940px;
+
+
+  
 }
 
 .slider__vertical {
@@ -138,7 +167,7 @@
 .arrow-left {
   position: absolute;
   margin-top: 280px;
-  z-index: 1;
+  z-index: 20;
 }
 
 .arrow-left:hover {
@@ -146,7 +175,7 @@
   margin-top: 280px;
   background-color: bisque;
   cursor: pointer;
-  z-index: 1;
+  z-index: 20;
 }
 
 .arrow-right {
@@ -167,10 +196,60 @@
 
 .item {
   display: none;
+  position: relative;
+  animation: 0.5s ease-in-out;
 }
-.active {
+
+.active, .next {
   display: block;
 }
+
+.next {
+  position: absolute;
+  top: 0;
+  width:100%;
+}
+
+.to-left {
+  animation-name: left;
+
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
 
 .slide2 {
   position: absolute;
@@ -365,6 +444,9 @@ h4 {
   outline: 0;
   outline-offset: 0 
 }
+.active-button {
+  pointer-events: none;
+}
 
 .second-button {
   margin-right: 6px;
@@ -393,7 +475,7 @@ h4 {
 }
 
 .portfolio-border {
-  border: 5px solid #f06c64;
+  outline: #f06c64 solid 5px;
 
 }
 
@@ -505,7 +587,7 @@ h4 {
 /*Third part*/
 
 .quote {
-  height: 649px;
+  height: 690px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
@@ -558,6 +640,7 @@ h4 {
 .input-text:focus, .input-email:focus, .textarea:focus {
     outline: 0;
     outline-offset: 0;
+    background-color: skyblue;
 }
 
 .textarea {
@@ -734,10 +817,10 @@ footer {
 .message-block {
   position: absolute;
   width: 60vw;
-  height: 60vh;
-  margin-left: -30px;
+  height: 80vh;
   background: rgba(255,245,238, 0.5);
   border-radius: 8px;
+  margin-top: -180px;
 }
 
 .message {
