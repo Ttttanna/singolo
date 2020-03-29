@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
@@ -11,7 +11,10 @@
    <div class="container">
     <div class="header-container to-scroll" id="home"> 
     <header class="header">
-     <div class="header-wrapper" > 
+     <div class="header-wrapper" >
+       <span class="burger">
+         <span class="burger__line"></span>
+       </span> 
       <h1 class ="logo">Singolo <span>*</span></h1>
       <nav class="header__navigation">
         <ul class="navigation">
@@ -26,11 +29,9 @@
     </header>
    </div>
 
-
     <div class="slider">
       <div class="slider-wrapper">
-       <span class="arrow-left"><a href="#"><img src="assets/images/chev.png" alt="arrow"></a></span>
-       <div class="carousel">
+       <span class="arrow-left"><a href="#"><img src="assets/images/chev.png" alt="arrow"></a></span>       
          <div class="item active">
            <div class="slider__vertical"><img src="assets/images/iPhoneV.png" alt="phone"></div>
            <div class="slider__horizontal"><img src="assets/images/iPhoneb.png" alt="phone"></div>
@@ -43,16 +44,12 @@
          </div>
          <div class="item">
            <div class="slide2"><img src="assets/images/Slider.png"></div>
-         </div>
-       </div>
-       
-       <span class="arrow-right"><a href="#"><img src="assets/images/chev (1).png" alt="arrow"></a></span>
-       
+         </div>       
+       <span class="arrow-right"><a href="#"><img src="assets/images/chev (1).png" alt="arrow"></a></span>       
      </div>
      </div>      
 
-    <div class="services to-scroll" id = "serv">
-      
+    <div class="services to-scroll" id = "serv">      
       <div class="services-wrapper">
         <h2 class="services__h2"> Our Services</h2>
         <p class="services__p">Fusce dapibus, tellus ac cursus comodo, tortor mauris condimentum. Duis mollis, non commodo luctus nisi erat
@@ -104,8 +101,7 @@
         </div>
       </div>     
     </div>
-    <section class="portfolio to-scroll" id="portfolio">
-        
+    <section class="portfolio to-scroll" id="portfolio">        
       <div class="portfolio-wrapper">
         <h2 class="portfolio__h2">  Portfolio</h2>
         <p class="portfolio__p">Duis mollis, non commodo luctus nisi erat
@@ -128,8 +124,7 @@
             <div class="portfolio-image"><img src="assets/images/image9.png"></div>
             <div class="portfolio-image"><img src="assets/images/image10.png"></div>
             <div class="portfolio-image"><img src="assets/images/image11.png"></div>
-            <div class="portfolio-image"><img src="assets/images/image12.png"></div>
-          
+            <div class="portfolio-image"><img src="assets/images/image12.png"></div>          
           </div>
       </div>
     </section>
